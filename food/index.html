@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>台湾グルメ | 近くて 遠い国、台湾</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <link rel="icon" type="img/png" href="../img/favicon.png" />
+    <link rel="stylesheet" href="../css/common.css" />
+
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "srv2rrs",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+    <script src="../js/app.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  </head>
+  <header>
+    <nav class="p-header__nav">
+      <h2 class="screen-reader-text">サイト内メニュー</h2>
+      <button type="button" class="js-drawer" aria-controls="globalNav" aria-expanded="false">
+        <span class="p-hamburger__line">
+          <span class="screen-reader-text">メニューを開閉</span>
+        </span>
+      </button>
+      <ul id="globalNav" class="drawer u-upper">
+        <li><a href="../index.html">トップページ</a></li>
+        <li><a href="../index.html#taiwan">台湾とは</a></li>
+        <li><a href="../index.html#area">エリア紹介</a></li>
+        <li><a href="../index.html#access">アクセス</a></li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <section class="l-section -secondary">
+      <div class="d-container -secondary">
+        <h2 class="c-heading -force">台湾グルメ<span class="-caption">Gourmet</span></h2>
+        <div class="l-food__wrapper">
+          <div class="l-food__cover"></div>
+
+          <iframe
+            src="https://www.google.com/maps/d/u/2/embed?mid=1noV-bTyWbLHRTXEWzTAiMlEUFe_SWSc&ehbc=2E312F"
+            width="1280"
+            height="800"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <section class="l-section">
+      <!-- swiper -->
+      <div class="swiper-container d-spacer" data-y="min:largeBottom">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide c-img -nth">
+            <img src="../img/gourmet01.jpg" alt="写真" decoding="async" />
+            <p class="swiper_txt">タピオカドリンク</p>
+          </div>
+          <div class="swiper-slide c-img">
+            <img src="../img/gourmet02.jpg" alt="写真" decoding="async" />
+            <p class="swiper_txt">豆花</p>
+          </div>
+          <div class="swiper-slide c-img -nth">
+            <img src="../img/gourmet03.jpg" alt="写真" decoding="async" />
+            <p class="swiper_txt">パイナップルケーキ</p>
+          </div>
+          <div class="swiper-slide c-img">
+            <img src="../img/gourmet04.jpg" alt="写真" decoding="async" />
+            <p class="swiper_txt">魯肉飯</p>
+          </div>
+          <div class="swiper-slide c-img -nth">
+            <img src="../img/gourmet05.jpg" alt="写真" decoding="async" />
+            <p class="swiper_txt">小籠包</p>
+          </div>
+          <div class="swiper-slide c-img">
+            <img src="../img/gourmet06.jpg" alt="写真" decoding="async" />
+            <p class="swiper_txt">牛肉麺</p>
+          </div>
+        </div>
+      </div>
+      <!-- swiper -->
+    </section>
+    <footer>
+      <div class="l-footer">
+        <p class="p-footer__title">近くて 遠い国、台湾</p>
+        <p class="p-footer__copy"><small>copyrights ソエジマユカ All right reserved.</small></p>
+      </div>
+    </footer>
+  </body>
+</html>
